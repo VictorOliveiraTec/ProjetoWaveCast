@@ -1,0 +1,32 @@
+@import url(/src/style/navbar.css);
+@import url(/src/style/secao.css);
+@import url(/src/style/secao-horizontal.css);
+@import url(/src/style/secao-vertical.css);
+@import url(/src/style/aside.css);
+@import url(/src/style/base.css);
+@import url(/src/style/responsivo.css);
+
+body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:    "Aside Header"
+                            "Aside Main";
+}
+
+.cabecalho{
+    grid-area: Header;
+}
+
+.menu-lateral{
+    grid-area: Aside;
+}
+
+.principal{
+    grid-area: Main;
+}
+
+@media screen and (ma-width: 1024px){
+    body{
+        grid-template-columns: 1fr;
+    }
+}

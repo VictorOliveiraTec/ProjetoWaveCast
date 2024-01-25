@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+}
+
+.navbar__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.navbar__item form{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar__item button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .4rem;
+}

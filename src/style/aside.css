@@ -1,0 +1,24 @@
+.menu-lateral{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto) 1fr;
+    gap: 1.4375rem;
+}
+
+.menu-lateral__logo{
+    justify-self: center;
+}
+.menu-lateral__link{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:    "btn textt";
+} 
+
+.menu-lateral__link button{
+    grid-area: btn;
+    display: flex;
+    align-items: center;
+}
+.menu-lateral__link img{
+    grid-area: textt;
+}

@@ -1,0 +1,36 @@
+.secao-horizontal, .secao-vertical{
+    grid-template-rows: 70px auto;
+    align-items: end;
+    row-gap: 2rem;
+}
+
+.secao-horizontal .secao__cartoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(80% / 2, max(350px, 80% / 3)), 1fr));
+    gap: 1.25rem;
+}
+
+.secao-horizontal .cartao{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 3rem 0.9rem;
+    column-gap: 1.25rem;
+}
+
+.secao-horizontal .cartao .cartao__imagem{
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.secao-horizontal .cartao .cartao__botao{
+    grid-area: 2 / 3 / 3 / 4;
+    align-self: center;
+}
+
+.secao-horizontal .cartao .cartao__titulo{
+    align-self: center;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.secao-horizontal .cartao .cartao__player{
+    grid-area: 3 / 2 / 4 / 3;
+}
